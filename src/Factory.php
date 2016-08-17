@@ -10,7 +10,7 @@ use Laradic\Filesystem\Filesystem;
 use Laradic\Support\Util;
 use Symfony\Component\Finder\SplFileInfo;
 
-abstract class Scanner
+class Factory
 {
 
     /** @var \Laradic\Filesystem\Filesystem */
@@ -18,6 +18,8 @@ abstract class Scanner
 
     /** @var \Doctrine\Common\Annotations\AnnotationReader */
     protected $reader;
+
+    protected $annotations = [ ];
 
     /**
      * Scanner constructor.
@@ -33,12 +35,33 @@ abstract class Scanner
         $this->reader   = new AnnotationReader();
     }
 
+    public function addAnnotation($class)
+    {
+        $this->annotations[] = $class;
+    }
+
     /**
-     * An array of all annotation classes
-     *
      * @return array
      */
-    abstract public function getAnnotations();
+    public function getAnnotations()
+    {
+        return $this->annotations;
+    }
+
+    /**
+     * Set the annotations value
+     *
+     * @param array $annotations
+     *
+     * @return Factory
+     */
+    public function setAnnotations($annotations)
+    {
+        $this->annotations = $annotations;
+        return $this;
+    }
+
+
 
     public function registerAnnotation($filePath)
     {

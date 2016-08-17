@@ -22,8 +22,8 @@
  */
 namespace Codex\Addons\Scanner;
 
-use Codex\Exception\FileNotFoundException;
 use Doctrine\Common\Annotations\Reader;
+use Laradic\AnnotationScanner\Exception\FileNotFoundException;
 
 /**
  * Class FileInspector

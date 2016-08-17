@@ -22,8 +22,8 @@
  */
 namespace Codex\Addons\Scanner;
 
-use Codex\Exception\ClassNotFoundException;
 use Doctrine\Common\Annotations\Reader;
+use Laradic\AnnotationScanner\Exception\ClassNotFoundException;
 
 /**
  * Class ClassInspector
@@ -151,7 +151,7 @@ class ClassInspector
     }
 
     /**
-     * @return array|null
+     * @return array
      */
     public function getClassAnnotations()
     {
@@ -163,7 +163,7 @@ class ClassInspector
     }
 
     /**
-     * @return array|null
+     * @return array
      */
     public function getMethodAnnotations()
     {
@@ -181,7 +181,7 @@ class ClassInspector
     }
 
     /**
-     * @return array|null
+     * @return array
      */
     public function getPropertyAnnotations()
     {

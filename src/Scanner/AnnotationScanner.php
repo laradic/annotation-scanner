@@ -23,6 +23,7 @@
 namespace Codex\Addons\Scanner;
 
 use Doctrine\Common\Annotations\Reader;
+use Laradic\AnnotationScanner\Exception\AnnotationScannerException;
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 use Symfony\Component\Finder\SplFileInfo;
 

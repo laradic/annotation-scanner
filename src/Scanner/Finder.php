@@ -22,10 +22,10 @@
  */
 namespace Codex\Addons\Scanner;
 
-use Codex\Exception\AnnotationScannerException;
-use Codex\Exception\CodexException;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\Reader;
+use Laradic\AnnotationScanner\Exception\AnnotationScannerException;
+use Laradic\AnnotationScanner\Exception\MethodNotSupportedException;
 use Symfony\Component\Finder\Finder as BaseFinder;
 
 /**
@@ -91,11 +91,11 @@ class Finder extends BaseFinder
     }
 
     /**
-     * @throws CodexException
+     * @throws MethodNotSupportedException
      */
     public function directories()
     {
-        throw CodexException::unsuportedMethodCall('the directories() method is not supported by this Finder!');
+        throw new MethodNotSupportedException('the directories() method is not supported by this Finder!');
     }
 
     /**
