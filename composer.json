@@ -1,0 +1,36 @@
+{
+    "name": "laradic/annotation-scanner",
+    "description": "Annotation scanner",
+    "keywords": ["laradic", "annotation", "laravel"],
+    "license": "MIT",
+    "homepage": "https://la.radic.nl",
+    "authors": [
+        {"name": "Laradic", "homepage": "https://laradic.nl", "email": "info@laradic.nl"},
+        {"name": "Robin Radic", "homepage": "http://robin.radic.nl", "email": "robin@laradic.nl", "role": "Developer"}
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laradic/filesystem": "~1.0",
+        "laradic/support": "~1.0",
+        "laradic/service-provider": "~1.0"
+    },
+    "require-dev": {
+        "laradic/testing": "~1.0",
+        "laradic/phing": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laradic\\AnnotationScanner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laradic\\Tests\\AnnotationScanner\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

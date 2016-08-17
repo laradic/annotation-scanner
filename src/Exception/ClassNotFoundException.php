@@ -1,0 +1,8 @@
+<?php
+namespace Laradic\AnnotationScanner\Exception;
+
+
+class ClassNotFoundException extends \RuntimeException
+{
+
+}
