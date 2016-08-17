@@ -1,9 +1,9 @@
 <?php
-namespace Codex\Addons;
+namespace Laradic\AnnotationScanner;
 
-use Codex\Addons\Scanner\ClassFileInfo;
-use Codex\Addons\Scanner\ClassInspector;
-use Codex\Addons\Scanner\AnnotationScanner as AnnotationScanner;
+use Laradic\AnnotationScanner\Scanner\ClassFileInfo;
+use Laradic\AnnotationScanner\Scanner\ClassInspector;
+use Laradic\AnnotationScanner\Scanner\AnnotationScanner as AnnotationScanner;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Laradic\Filesystem\Filesystem;
@@ -24,8 +24,8 @@ class Factory
     /**
      * Scanner constructor.
      *
-     * @param \Codex\Addons\Factory                         $addons
-     * @param \Codex\Addons\Manifest                        $manifest
+     * @param \Laradic\AnnotationScanner\Factory            $addons
+     * @param \Laradic\AnnotationScanner\Manifest           $manifest
      * @param \Doctrine\Common\Annotations\AnnotationReader $reader
      * @param \Sebwite\Filesystem\Filesystem                $fs
      */

@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-namespace Codex\Addons\Scanner;
+namespace Laradic\AnnotationScanner\Scanner;
 
 use Doctrine\Common\Annotations\Reader;
 use Laradic\AnnotationScanner\Exception\ClassNotFoundException;
