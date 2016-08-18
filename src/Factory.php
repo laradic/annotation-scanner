@@ -37,7 +37,10 @@ class Factory
 
     public function addAnnotation($class)
     {
-        $this->annotations[] = $class;
+        $class = is_array($class) ? $class : func_get_args();
+        foreach ( $class as $clas ) {
+            $this->annotations[] = $clas;
+        }
     }
 
     /**

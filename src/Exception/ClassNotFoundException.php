@@ -2,7 +2,7 @@
 namespace Laradic\AnnotationScanner\Exception;
 
 
-class ClassNotFoundException extends \RuntimeException
+class ClassNotFoundException extends AnnotationScannerException
 {
 
 }
