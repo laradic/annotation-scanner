@@ -14,7 +14,7 @@
         "laradic/support": "~1.0",
         "laradic/service-provider": "~1.0",
         "doctrine/common": "~2.6",
-        "doctrine/annotations": "~1.2",
+        "doctrine/annotations": "~1.2"
     },
     "require-dev": {
         "laradic/testing": "~1.0",
