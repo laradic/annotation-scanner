@@ -1,11 +1,10 @@
 {
     "name": "laradic/annotation-scanner",
-    "description": "Annotation scanner",
+    "description": "Scan directories or files for annotations ",
     "keywords": ["laradic", "annotation", "laravel"],
     "license": "MIT",
     "homepage": "https://la.radic.nl",
     "authors": [
-        {"name": "Laradic", "homepage": "https://laradic.nl", "email": "info@laradic.nl"},
         {"name": "Robin Radic", "homepage": "http://robin.radic.nl", "email": "robin@laradic.nl", "role": "Developer"}
     ],
     "require": {
