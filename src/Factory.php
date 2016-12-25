@@ -75,7 +75,7 @@ class Factory
     public function scanDirectory($path)
     {
         $files = [ ];
-        foreach ( $this->createAnnotationScanner($this->getAnnotations())->in($path) as $file )
+        foreach ( $this->createAnnotationScanner($this->annotations)->in($path) as $file )
         {
             /** @var ClassFileInfo $file */
             $files[$file->getClassName()] = $file;
