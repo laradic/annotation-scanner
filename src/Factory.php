@@ -43,8 +43,8 @@ class Factory
      */
     public function __construct(AnnotationReader $reader, Filesystem $fs)
     {
-        $this->fs       = new Filesystem();
-        $this->reader   = new AnnotationReader();
+        $this->fs       = $fs;
+        $this->reader   = $reader;
     }
 
     public function addAnnotation($class)
