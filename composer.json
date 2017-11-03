@@ -8,7 +8,7 @@
         {"name": "Robin Radic", "homepage": "http://robin.radic.nl", "email": "robin@laradic.nl", "role": "Developer"}
     ],
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0.0",
         "laradic/filesystem": "~1.0",
         "laradic/support": "~1.0",
         "laradic/service-provider": "~1.0",
@@ -16,8 +16,6 @@
         "doctrine/annotations": "~1.2"
     },
     "require-dev": {
-        "laradic/testing": "~1.0",
-        "laradic/phing": "~1.0"
     },
     "autoload": {
         "psr-4": {

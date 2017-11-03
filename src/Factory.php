@@ -24,6 +24,7 @@ use Symfony\Component\Finder\SplFileInfo;
 class Factory
 {
 
+    protected $depth = 5;
 
     /** @var \Laradic\Filesystem\Filesystem */
     protected $fs;
@@ -103,6 +104,14 @@ class Factory
         return new ClassFileInfo($file, $inspector);
     }
 
+
+    public function depth($depth)
+    {
+        $this->depth = $depth;
+        return $this;
+    }
+
+
     protected function createAnnotationScanner($annotationClass)
     {
         if ( ! is_array($annotationClass) )
@@ -110,6 +119,7 @@ class Factory
             $annotationClass = [ $annotationClass ];
         }
         $scanner = new AnnotationScanner($this->reader);
+        $scanner->depth($this->depth);
         return $scanner->annotations($annotationClass);
     }
 
